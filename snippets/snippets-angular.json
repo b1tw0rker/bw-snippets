@@ -1,0 +1,43 @@
+{
+    "bw-ng-client-get": {
+        "prefix": "bw-ng-client-get",
+        "body": [
+            "/**",
+            " *",
+            " * import { HttpClient, HttpErrorResponse } from '@angular/common/http'; // add HttpErrorResponse to common/http",
+            " * import { retry } from 'rxjs';",
+            " *",
+            " * use observer 'response' to get the whole error message",
+            " *",
+            " */",
+            "    this.client",
+            "      .get(",
+            "        '${1:https://catfact.ninja/fact}', {",
+            "          observe: 'response',",
+            "        })",
+            "      .pipe(retry(5))",
+            "      .subscribe(",
+            "        (data: any) => {",
+            "          console.log(data);",
+            "          //console.log(data['body']); // usage with observe 'response'",
+            "          //console.log(data); // usage without observe",
+            "        },",
+            "        (err: HttpErrorResponse) => {",
+            "          if (err.error instanceof Error) {",
+            "            console.log('Client to dumb to call: ' , err.message );",
+            "          } else {",
+            "            console.log('Something terribly went wrong: ' , err.message );",
+            "          }",
+            "        }",
+            "      );"
+        ],
+        "description": "http client get - With retry and ErrorLog switch"
+    },
+    "bw-ng-client-get-constructor": {
+        "prefix": "bw-ng-client-get-constructor",
+        "body": [
+            "private httpClient: HttpClient"
+        ],
+        "description": "add 'private client: HttpClient' within the constructor"
+    }
+}

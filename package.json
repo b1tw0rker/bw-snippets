@@ -1,0 +1,47 @@
+{
+  "name": "bw-snippets",
+  "displayName": "bw-snippets",
+  "description": "Nick's personal javascript,typescript,jQuery,Angular snippet collection.",
+  "version": "0.0.16",
+  "publisher": "BITWORKER",
+  "icon": "bitworker.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b1tw0rker"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets-javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets-jQuery.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-angular.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/snippets-php.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/snippets-html.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "bw-console": {
+        "prefix": [
+            "bw-console"
+        ],
+        "body": [
+            "console.log(${1:lorem});"
+        ],
+        "description": "BW Console Log()..."
+    },
+    "bw-fetch": {
+        "prefix": "",
+        "body": [
+            "    /**",
+            "     *",
+            "     * async/await Fetch",
+            "     *",
+            "     */",
+            "    async function bwFetch()",
+            "",
+            "    try {",
+            "        let req = await fetch('https://catfact.ninja/fact');",
+            "        let res = await req.json();",
+            "        console.log(res.fact);",
+            "    } catch (e) {",
+            "        console.log('Error: ', e);",
+            "    }",
+            "",
+            "    // Fire function",
+            "    bwFetch();",
+            ""
+        ],
+        "description": "fetch cat facts asnyc and await the result"
+    }
+}

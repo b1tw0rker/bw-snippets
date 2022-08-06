@@ -1,0 +1,82 @@
+{
+    "bw-onkeypress": {
+        "scope": "php,html",
+        "prefix": "bw-onkeypress",
+        "body": [
+            "onkeypress=\"return /[a-zA-Z0-9@.\\ -]/i.test(event.key)\""
+        ],
+        "description": "onkeypress input check"
+    },
+    "bw-pattern": {
+        "scope": "php,html",
+        "prefix": "bw-pattern",
+        "body": [
+            "pattern=\"[A-Za-z]{3}\""
+        ],
+        "description": "input pattern. Read More here: https://www.w3schools.com/tags/att_input_pattern.asp"
+    },
+    "Print to console": {
+        "prefix": "bw-any",
+        "body": [
+            "console.log('$1');",
+            "$2"
+        ],
+        "description": "Log output to console"
+    },
+    "bw-mat-icon": {
+        "prefix": "bw-mat-icon",
+        "body": [
+            "<mat-icon aria-hidden=\"false\" aria-label=\"${1:plane} icon\">${1:plane}</mat-icon>"
+        ],
+        "description": "Google Material Icon"
+    },
+    "bw-tabs": {
+        "prefix": "bw-tabs",
+        "body": [
+            "<ul class=\"nav nav-tabs\" id=\"LoremIpsumTab\" role=\"tablist\">",
+            "     <li class=\"nav-item\" role=\"presentation\">",
+            "         <a class=\"nav-link active\" id=\"allgemeines-tab\" data-bs-toggle=\"tab\" href=\"#allgemeines\" role=\"tab\" aria-controls=\"allgemeines\" aria-selected=\"true\">Allgemeines</a>",
+            "     </li>",
+            "     <li class=\"nav-item\" role=\"presentation\">",
+            "         <a class=\"nav-link\" id=\"email-tab\" data-bs-toggle=\"tab\" href=\"#email\" role=\"tab\" aria-controls=\"email\" aria-selected=\"false\"><i class=\"fal fa-envelope\"></i> E-Mail</a>",
+            "     </li>",
+            "</ul>",
+            "",
+            "<div class=\"tab-content\" id=\"bwTabContent\">",
+            "     <div class=\"tab-pane fade show active\" id=\"allgemeines\" role=\"tabpanel\" aria-labelledby=\"allgemeines-tab\">",
+            "         lorem ipsum 1",
+            "     </div> <!-- end tab -->",
+            "     <div class=\"tab-pane fade\" id=\"email\" role=\"tabpanel\" aria-labelledby=\"email-tab\">",
+            "         lorem ipsum 2",
+            "     </div> <!-- end tab -->",
+            "</div> <!-- end tabContent -->"
+        ],
+        "description": "Bootstrap 5.1 Tabs"
+    },
+    "bw-table": {
+        "prefix": "bw-table",
+        "body": [
+            "<table id=\"table\" data-toggle=\"table\" data-search=\"true\" data-sort-class=\"table-active\" data-sortable=\"true\" data-pagination=\"false\" data-page-size=\"1000\" class=\"table table-hover table-bordered table-dark\">",
+            "     <thead class=\"thead-dark\">",
+            "         <tr>",
+            "             <th data-field=\"id\" data-sortable=\"true\" scope=\"col\">TIME</th>",
+            "             <th data-field=\"senddate\" data-sortable=\"true\" scope=\"col\">IP</th>",
+            "             <th data-field=\"an\" data-sortable=\"true\" scope=\"col\">USR</th>",
+            "             <th data-field=\"subject\" data-sortable=\"true\" scope=\"col\">ACTION</th>",
+            "             <th data-field=\"views\" data-sortable=\"true\" scope=\"col\">STATE</th>",
+            "         </tr>",
+            "     </thead>",
+            "     <tbody>",
+            "           <tr>",
+            "                 <td></td>",
+            "                 <td></td>",
+            "                 <td></td>",
+            "                 <td></td>",
+            "                 <td></td>",
+            "           </tr>",
+            "     </tbody>",
+            "</table>"
+        ],
+        "description": "Bootstrap 5.1 Table"
+    }
+}

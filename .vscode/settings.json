@@ -1,0 +1,15 @@
+{
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+
+      "prettier.printWidth": 1250,
+      "prettier.tabWidth": 6,
+      "prettier.singleQuote": true,
+
+      "editor.fontFamily": "\"Fira Code\", Consolas, 'Courier New', monospace",
+      "editor.fontLigatures": true,
+      "editor.fontSize": 12.1,
+
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs": true
+}
