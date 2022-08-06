@@ -38,6 +38,6 @@
         "body": [
             "private httpClient: HttpClient"
         ],
-        "description": "add 'private client: HttpClient' within the constructor"
+        "description": "add 'private client: HttpClient' within the constructor."
     }
 }
