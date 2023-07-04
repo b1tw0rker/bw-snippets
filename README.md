@@ -18,6 +18,10 @@ Actually, serving about 44 personal javascript,typescript and PHP snippets of da
 
 VSCode 1.70 and above
 
+### 0.0.21
+
+• bugfix version. second fix: angular http-client issue
+
 ### 0.0.20
 
 • added more documentation

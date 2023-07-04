@@ -2,7 +2,7 @@
   "name": "bw-snippets",
   "displayName": "bw-snippets",
   "description": "Nick's personal javascript,typescript,jQuery,Angular snippet collection.",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "publisher": "BITWORKER",
   "icon": "bitworker.png",
   "license": "MIT",

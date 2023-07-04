@@ -20,7 +20,7 @@
             "          observe: 'response',",
             "        })",
             "      .pipe(retry(5))",
-            "      .subscribe(",
+            "      .subscribe({",
             "        next: (data: any) => {",
             "          console.log(data);",
             "          //console.log(data['body']); // usage with observe 'response'",
@@ -33,7 +33,7 @@
             "            console.log('Something terribly went wrong: ' , err.message );",
             "          }",
             "        }",
-            "      );"
+            "      });"
         ],
         "description": "http client get - With retry and ErrorLog switch"
     },
