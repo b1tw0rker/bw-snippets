@@ -2,11 +2,13 @@
 
 Nick's personal javascript,typescript,jQuery,Angular,PHP snippet collection.
 
-In your javascript,typescript or PHP files just type: bw- and the snippets will be listed.
+## Usage
 
-Made mit ❤️ and VSCode for the community.
+In your javascript,typescript or PHP files just type: bw- and the snippets will be listed in the suggestions field.
 
-ATTENTION: THIS PLUGIN IS IN BETA MODE.
+Made with ❤️ for the community.
+
+ATTENTION: THIS PLUGIN IS STILL IN BETA MODE.
 
 ## Features
 
@@ -14,7 +16,23 @@ Actually, serving about 44 personal javascript,typescript and PHP snippets of da
 
 ## Requirements
 
-VSCode 1.69 and above
+VSCode 1.70 and above
+
+### 0.0.20
+
+• added more documentation
+
+### 0.0.19
+
+• bugfix version. fixed angular http-client issue
+
+### 0.0.18
+
+• bugfix version
+
+### 0.0.17
+
+• added Anguar OAuth2 Module snippet
 
 ### 0.0.16
 

@@ -4,25 +4,29 @@
         "body": [
             "/**",
             " *",
+            " * description:",
+            " *",
             " * import { HttpClient, HttpErrorResponse } from '@angular/common/http'; // add HttpErrorResponse to common/http",
             " * import { retry } from 'rxjs';",
             " *",
             " * use observer 'response' to get the whole error message",
             " *",
+            " * last modified: 04.07.2023",
+            " *",
             " */",
-            "    this.client",
+            "    this.httpClient",
             "      .get(",
             "        '${1:https://catfact.ninja/fact}', {",
             "          observe: 'response',",
             "        })",
             "      .pipe(retry(5))",
             "      .subscribe(",
-            "        (data: any) => {",
+            "        next: (data: any) => {",
             "          console.log(data);",
             "          //console.log(data['body']); // usage with observe 'response'",
             "          //console.log(data); // usage without observe",
             "        },",
-            "        (err: HttpErrorResponse) => {",
+            "        error: (err: HttpErrorResponse) => {",
             "          if (err.error instanceof Error) {",
             "            console.log('Client to dumb to call: ' , err.message );",
             "          } else {",
@@ -39,5 +43,17 @@
             "private httpClient: HttpClient"
         ],
         "description": "add 'private client: HttpClient' within the constructor."
+    },
+    "bw-ng-oauthModule": {
+        "prefix": "bw-ng-oauthModule",
+        "body": [
+            "OAuthModule.forRoot({",
+            " resourceServer: {",
+            "   sendAccessToken: true,",
+            "   allowedUrls: ['${1:https://resource-server-url:3000/api}'],",
+            " },",
+            "}),"
+        ],
+        "description": "OAuth2 Module"
     }
 }

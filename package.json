@@ -2,12 +2,12 @@
   "name": "bw-snippets",
   "displayName": "bw-snippets",
   "description": "Nick's personal javascript,typescript,jQuery,Angular snippet collection.",
-  "version": "0.0.16",
+  "version": "0.0.20",
   "publisher": "BITWORKER",
   "icon": "bitworker.png",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.69.0"
+    "vscode": "^1.70.0"
   },
   "repository": {
     "type": "git",
